@@ -665,14 +665,14 @@ li:hover > #dropdown-menu-2 {
   #servizi .six {
     max-height: 45vh !important; }
     #servizi .six h3 {
-      margin-top: 70px !important; }
+      margin-top: 1vh !important; }
     #servizi .six li {
       font-size: 2.5em; }
   #servizi .seven a {
     font-size: 2.5em !important;
     line-height: 5vh !important;
     width: 30% !important;
-    margin: 70px 0 0 0 !important;
+    margin: 3vh 0 0 0 !important;
     padding: 10px; }
   #servizi .nine {
     max-height: 45vh !important; }
