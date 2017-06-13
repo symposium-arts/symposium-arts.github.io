@@ -100,7 +100,6 @@ html {
   pointer-events: none; }
 
 #desktopNav {
-  margin: 1.5vw 0 0 0 auto;
   text-align: center;
   top: 1vh;
   z-index: 100;
@@ -309,7 +308,7 @@ li:hover > #dropdown-menu-2 {
   #socialDesktopLinks img {
     width: 50px;
     height: 50px;
-    margin: 0 30px 0 30px; }
+    margin: 0 1vw 0 1vw; }
     #socialDesktopLinks img:hover {
       animation-name: social-icons-rotate;
       animation-duration: 400ms;
@@ -336,14 +335,6 @@ li:hover > #dropdown-menu-2 {
   background-attachment: fixed; }
   #servizi h3 {
     line-height: 40px; }
-  #servizi ul {
-    list-style: none; }
-  #servizi li {
-    color: #fff;
-    font-family: "Bree Serif", serif;
-    font-size: 1.1em;
-    font-weight: 200;
-    margin-right: 2vw; }
 
 #contatti {
   margin-top: 0;
@@ -362,7 +353,7 @@ li:hover > #dropdown-menu-2 {
     text-align: center;
     border: none;
     transform: translateY(-10vh);
-    top: 22vh; }
+    top: 26vh; }
     #contatti #Email-form h3 {
       margin: 0;
       padding: 0;
@@ -372,10 +363,19 @@ li:hover > #dropdown-menu-2 {
       transform: translateY(70px);
       font-weight: 200;
       color: white; }
+    #contatti #Email-form a {
+      display: inline-block;
+      padding: 20px;
+      background: #1a8cff;
+      color: white;
+      font-size: 2vw;
+      margin: 2vw 0 2vw 0;
+      border-radius: 8px;
+      box-shadow: inset -7px -7px 30px rgba(0, 0, 0, 0.5); }
     #contatti #Email-form #Thankh3 {
       top: 70px; }
     #contatti #Email-form p {
-      font-size: 1.5em;
+      font-size: 1.4vw;
       margin: auto;
       color: white;
       max-width: 80%;
@@ -474,7 +474,7 @@ li:hover > #dropdown-menu-2 {
   justify-content: center;
   align-items: center; }
   .flex-container .box {
-    height: 45vh;
+    min-height: 45vh;
     width: 15vw;
     flex-grow: 1;
     margin: 32.5vh 14px 32.5vh 14px;
@@ -522,28 +522,9 @@ li:hover > #dropdown-menu-2 {
       display: block;
       border: none; }
   .flex-container .five a {
-    height: 45vh !important; }
+    min-height: 45vh !important; }
   .flex-container .six h3 {
     margin-top: 10px; }
-  .flex-container .seven a {
-    min-width: 170px !important;
-    max-width: none;
-    border-radius: 6px;
-    font-size: 1.5em;
-    margin: 70px 0 0 10px;
-    background-color: #3399ff;
-    color: white;
-    border: none;
-    width: 50%;
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
-    letter-spacing: 1px;
-    display: inline-block;
-    position: relative;
-    bottom: 1px;
-    line-height: 7vh;
-    height: 15%; }
-    .flex-container .seven a:hover {
-      background-color: #1a8cff; }
 
 #mobileIconsContainer {
   display: flex;
@@ -602,6 +583,7 @@ li:hover > #dropdown-menu-2 {
     justify-content: column; }
 
   .box {
+    min-height: 34vh;
     max-height: 35vh;
     min-width: 100vw !important;
     margin: 35px 0 35px 0 !important;
@@ -623,13 +605,13 @@ li:hover > #dropdown-menu-2 {
       max-width: none !important;
       margin: auto !important; }
 
-  #lavori {
-    height: 200vh; }
-    #lavori iframe {
-      display: none; }
+  #lavori iframe {
+    display: none !important; }
 
-  #servizi {
-    height: 200vh; }
+  #contatti a {
+    transform: scale(1.3) !important; }
+  #contatti p {
+    font-size: 2.3em !important; }
 
   #footer {
     display: none; }
@@ -665,21 +647,13 @@ li:hover > #dropdown-menu-2 {
   #servizi .six {
     max-height: 45vh !important; }
     #servizi .six h3 {
-      margin-top: 1vh !important; }
+      margin-top: 4vh !important; }
     #servizi .six li {
       font-size: 2.5em; }
-  #servizi .seven a {
-    font-size: 2.5em !important;
-    line-height: 5vh !important;
-    width: 30% !important;
-    margin: 0.5vh 0 0 0 !important;
-    padding: 10px; }
   #servizi .nine {
     max-height: 45vh !important; }
     #servizi .nine h3 {
       margin-top: 70px !important; }
-    #servizi .nine li {
-      font-size: 2.5em; }
 
   #loadingText {
     left: 25vw !important;

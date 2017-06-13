@@ -11,11 +11,11 @@
 	<link rel="icon" href="img/rsz_boutique_icon.bmp" type="image/x-icon"/>
 </head>
 <body>
-	<div id="load_screen">
+	<!--<div id="load_screen">
 		<h1 id="loadingText">CARICAMENTO</h1>
 		<div class="spinner spinner-4"></div>
 		<div class="pace"></div>
-	</div>
+	</div>-->
 	<h1 id="logo">Symposium</h1>
 	<nav id="desktopNav">
 		<ul>
@@ -66,14 +66,14 @@
 	</div>
 	<div id="mobileFooter">
 		<div id="mobileIconsContainer">
-			<a href="https://www.facebook.com/boutiquedelmistero/" "><img src="img/Facebook-square.png"></a>
-			<a href="https://www.instagram.com/boutiquedelmistero_yt/" ><img src="img/instagram-new.png"></a>
-			<a href="https://www.youtube.com/channel/UCuEDlaY-RUA9OpfLH--nf-A" ><img src="img/youtube-new.png"></a>
+			<a href="https://www.facebook.com/boutiquedelmistero/" target="blank"><img src="img/Facebook-square.png"></a>
+			<a href="https://www.instagram.com/boutiquedelmistero_yt/" target="blank"><img src="img/instagram-new.png"></a>
+			<a href="https://www.youtube.com/channel/UCuEDlaY-RUA9OpfLH--nf-A" target="blank"><img src="img/youtube-new.png"></a>
 			<a href="#"><img src="img/twitter-new.png"></a>
 		</div>
 	</div>
 	<div id="landing">
-		<div id="homeImgCont"></div>
+		<!--<div id="homeImgCont"></div>-->
 	</div>
 	<div id="lavori">
 		<div class="flex-container">
@@ -110,20 +110,10 @@
 			<div class="box six">
 				<h3>Fotografia e Grafiche</h3>
 				<p>Che sia per il tuo profilo Instagram, la copertina del tuo ultimo album o un evento da ricordare noi realizziamo ciò che ti serve</p>
-				<ul>
-					<li>1 immagine.....1€</li>
-					<li>5 immagini.....3.5€</li>
-					<li>10 immagini.....7€</li>
-					<li>servizio fotografico.....12€/h</li>
-					<li>+correzione colore.....1€</li>
-					<li>+photoshop.....1.5€</li>
-					<li>copertina album/libro....5€</li>
-				</ul>
 			</div>
 			<div class="box seven">
 				<h3>Editing</h3>
 				<p>Video musicali, sketch pubblicitari, riprese di feste e matrimoni sono solo alcuni dei servizi di registrazione e montaggio video che puoi richiedere</p>
-				<a href="#contatti">CONTATTACI</a>
 			</div>
 			<div class="box eight">
 				<h3>Basi Musicali</h3>
@@ -132,23 +122,17 @@
 			<div class="box nine">
 				<h3>Scritti</h3>
 				<p>Chiunque abbia bisogno di servizi di scrittura o ghostwriting di qualunque tipologia si trova nella sezione giusta!</p>
-				<ul>
-					<li>1 cartella.....2€</li>
-					<li>10-30 cartelle.....1.5€ cad.</li>
-					<li>>30 cartelle.....1€ cad.</li>
-				</ul>
-				<p>1500 caratteri/cartella</p>
 			</div>
 			<div class="box ten">
 				<h3>Gadgets</h3>
-				<p>Coming soon...</p>
+				<p>Clicca qui se cerchi idee originali ed artistiche per l'acquisto di una maglietta, un poster, una tazza e quant'altro </p>
 			</div>
 		</div>	
 	</div>
 	<div id="contatti">
 		<div id="Email-form">
 			<h3>CONTATTACI</h3><br>
-			<form action="send.php" method="post">
+			<!--<form action="send.php" method="post">
 				<input type="text" name="name" placeholder="Nome" required><br>
 				<input type="email" name="email" placeholder="Indirizzo E-Mail" required><br>
 				<legend>SERVIZIO (FACOLTATIVO)</legend>
@@ -161,13 +145,14 @@
 				</select>
 				<textarea id="message" name="message" cols="20" rows="4" placeholder="Messaggio" required></textarea><br>
 				<input id="send" type="submit" name="submit" value="INVIA">
-			</form>
+			</form>-->
+			<p>Per collaborazioni, richieste di servizi o semplice corrispondenza:<br><a><strong>sympstudio@gmail.com</strong></a><br>oppure scrivici sui social: Facebook e Instagram</p>
 		</div>
 	</div>
 
-	<div id="footer">
+	<!--<div id="footer">
 		
-	</div>
+	</div>-->
 	<script>
 		function parallax(){
 			var prlx_ly_1 =	document.getElementById('homeImgCont');
@@ -175,13 +160,13 @@
 		}
 		window.addEventListener("scroll", parallax, false);
 	</script>
-	<script>
+	<!--<script>
 		window.addEventListener("load", function(){
 			var load_screen = document.getElementById("load_screen");
 			document.body.removeChild(load_screen);
 		});
 	</script>
-	<script type="text/javascript" src="pace.js"></script>
+	<script type="text/javascript" src="pace.js"></script>-->
 	<script type="text/javascript" src="symposium.js"></script>
 </body>
 </html>
