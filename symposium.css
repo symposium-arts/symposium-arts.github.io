@@ -9,6 +9,30 @@ html {
     background-image: url(img/stars.jpg);
     background-size: contain;
     background-position: center; }
+  html h2 {
+    color: white;
+    width: 45%;
+    margin: auto;
+    text-align: center;
+    font-weight: 400;
+    font-family: "Courgette", cursive;
+    line-height: 50px;
+    margin-top: 50px; }
+  html #welcome {
+    color: white;
+    margin: auto;
+    padding: 0;
+    text-align: center;
+    font-family: "Lobster", cursive;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-size: 3em; }
+  html #landingText {
+    position: absolute;
+    padding: 0;
+    top: 20vh;
+    text-align: center;
+    width: 100%; }
   html #logo {
     font-family: "Pacifico", cursive;
     color: white;
@@ -21,12 +45,13 @@ html {
     letter-spacing: 1px;
     font-weight: 200; }
   html #load_screen {
-    background: #000;
+    background-color: black;
     position: fixed;
     z-index: 200;
     top: 0px;
     width: 100%;
-    height: 400vh; }
+    height: 400vh;
+    opacity: 0; }
     html #load_screen #loadingText {
       position: fixed;
       font-size: 4em;
@@ -95,7 +120,7 @@ html {
   top: 0;
   right: 100%;
   width: 100%;
-  height: 10px;
+  height: 5px;
   background: #29d;
   pointer-events: none; }
 
@@ -128,7 +153,7 @@ html {
         background: #cccccc;
         border-radius: 3px; }
   #desktopNav a {
-    padding: 10px;
+    padding: 20px 10px;
     color: black;
     text-decoration: none;
     font-weight: 400; }
@@ -320,6 +345,26 @@ li:hover > #dropdown-menu-2 {
   background-color: transparent;
   z-index: 0; }
 
+.comingSoon {
+  background-color: red;
+  width: 170px;
+  height: 60px;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  line-height: 60px;
+  position: relative; }
+
+#comingsoon1 {
+  transform: translateX(5vw) translateY(7vh); }
+
+#comingsoon2 {
+  transform: translateX(5vw) translateY(7vh); }
+
+#comingsoon3 {
+  transform: translateX(5vw) translateY(7vh); }
+
 #lavori {
   margin-top: 0;
   min-height: 100vh;
@@ -335,6 +380,28 @@ li:hover > #dropdown-menu-2 {
   background-attachment: fixed; }
   #servizi h3 {
     line-height: 40px; }
+  #servizi .contattaci {
+    background-color: #1a8cff;
+    width: 170px;
+    height: 60px;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    line-height: 60px;
+    position: relative; }
+    #servizi .contattaci a {
+      padding: 20px;
+      color: white;
+      text-decoration: none; }
+      #servizi .contattaci a:hover {
+        text-decoration: underline; }
+  #servizi #contattaci1 {
+    transform: translateX(5vw) translateY(7vh); }
+  #servizi #contattaci2 {
+    transform: translateX(5vw) translateY(8.5vh); }
+  #servizi #contattaci3 {
+    transform: translateX(5vw) translateY(10vh); }
 
 #contatti {
   margin-top: 0;
@@ -346,12 +413,12 @@ li:hover > #dropdown-menu-2 {
     background-color: rgba(255, 255, 255, 0.5);
     width: 37vw;
     height: 37vw;
+    border: 5px solid #1a8cff;
     border-radius: 1000px;
     margin: auto;
     padding: 0;
     box-shadow: 30px 30px 50px rgba(0, 0, 0, 0.3);
     text-align: center;
-    border: none;
     transform: translateY(-10vh);
     top: 26vh; }
     #contatti #Email-form h3 {
@@ -370,8 +437,7 @@ li:hover > #dropdown-menu-2 {
       color: white;
       font-size: 2vw;
       margin: 2vw 0 2vw 0;
-      border-radius: 8px;
-      box-shadow: inset -7px -7px 30px rgba(0, 0, 0, 0.5); }
+      border-radius: 8px; }
     #contatti #Email-form #Thankh3 {
       top: 70px; }
     #contatti #Email-form p {
@@ -521,8 +587,6 @@ li:hover > #dropdown-menu-2 {
       padding: 0;
       display: block;
       border: none; }
-  .flex-container .five a {
-    min-height: 45vh !important; }
   .flex-container .six h3 {
     margin-top: 10px; }
 
@@ -572,6 +636,18 @@ li:hover > #dropdown-menu-2 {
   #desktopNav {
     display: none; }
 
+  #landingText {
+    top: 15% !important;
+    font-size: 1.8em; }
+
+  #welcome {
+    font-size: 3em !important; }
+
+  h2 {
+    margin-top: 100px !important;
+    width: 70% !important;
+    line-height: 70px !important; }
+
   #logo {
     font-size: 4.5em;
     margin: -10px 0 0 0 !important;
@@ -608,9 +684,12 @@ li:hover > #dropdown-menu-2 {
   #lavori iframe {
     display: none !important; }
 
+  #contatti h3 {
+    font-size: 5em !important; }
   #contatti a {
     font-size: 1em !important;
-    transform: scale(1.5) !important; }
+    transform: scale(1.5) !important;
+    margin: 100px 0 100px 0 !important; }
   #contatti p {
     font-size: 2.5em !important; }
 
@@ -656,9 +735,26 @@ li:hover > #dropdown-menu-2 {
     #servizi .nine h3 {
       margin-top: 70px !important; }
 
-  #loadingText {
-    left: 25vw !important;
-    font-size: 6em !important; } }
+  .pace .pace-progress {
+    height: 15px !important; }
+
+  #contattaci1 {
+    transform: translateX(40vw) translateY(10vh) scale(2.4) !important; }
+
+  #contattaci2 {
+    transform: translateX(40vw) translateY(10vh) scale(2.4) !important; }
+
+  #contattaci3 {
+    transform: translateX(40vw) translateY(10vh) scale(2.4) !important; }
+
+  #comingsoon1 {
+    transform: translateX(40vw) translateY(10vh) scale(2.4) !important; }
+
+  #comingsoon2 {
+    transform: translateX(40vw) translateY(10vh) scale(2.4) !important; }
+
+  #comingsoon3 {
+    transform: translateX(40vw) translateY(10vh) scale(2.4) !important; } }
 /* large desktops and up ΓÇöΓÇöΓÇöΓÇô */
 @media screen and (min-width: 1280px) {
   #mobileNav {
