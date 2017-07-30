@@ -3,20 +3,20 @@
 <head>
 	<title>Symposium</title>
 	<link rel="stylesheet" type="text/css" href="symposium.css">
-	<link href="https://fonts.googleapis.com/css?family=Dancing+Script:700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Bubbler+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
 	<link rel="icon" href="img/rsz_boutique_icon.bmp" type="image/x-icon"/>
 </head>
 <body>
-	<!--<div id="load_screen">
-		<h1 id="loadingText">CARICAMENTO</h1>
-		<div class="spinner spinner-4"></div>
+	<div id="load_screen">
+		<!--<h1 id="loadingText">CARICAMENTO</h1>
+		<div class="spinner spinner-4"></div>-->
 		<div class="pace"></div>
-	</div>-->
+	</div>
 	<h1 id="logo">Symposium</h1>
+	<div id="landingText"><h1 id="welcome">Benvenuti<br>nel Symposium Project!</h1><br><h2>Siamo un gruppo di ragazzi con la passione per la cinematografia, la fotografia, il teatro, la scrittura, il disegno, la musica, l'arte in tutte le sue forme.<br>Qui troverete nostri lavori, basi musicali, programmi radio, sceneggiature, servizi di editing, grafiche, scrittura e riprese.<br>Buona permanenza!</h2></div>
 	<nav id="desktopNav">
 		<ul>
 			<li><a href="#landing">HOME</a></li>
@@ -31,11 +31,11 @@
 			</li>
 			<li><a href="#servizi">SERVIZI</a>
 				<ul class="drop-menu" id="dropdown-menu-2">
-					<li>Fotografia</li>
-					<li>Editing</li>
-					<li>Basi Musicali</li>
-					<li>Scritti</li>
-					<li>Gadgets</li>
+					<li><a class="interMenuLink" href="#servizi">Fotografia</a></li>
+					<li><a class="interMenuLink" href="#servizi">Editing</a></li>
+					<li><a class="interMenuLink" href="#servizi">Basi Musicali</a></li>
+					<li><a class="interMenuLink" href="#servizi">Scritti</a></li>
+					<li><a class="interMenuLink" href="#servizi">Gadget</a></li>
 				</ul>
 			</li>
 			<li><a href="#contatti">CONTATTI</a></li>
@@ -62,18 +62,18 @@
 		<a href="https://www.facebook.com/boutiquedelmistero/" target="blank"><img src="img/Facebook-square.png"></a>
 		<a href="https://www.instagram.com/boutiquedelmistero_yt/" target="blank"><img src="img/instagram-new.png"></a>
 		<a href="https://www.youtube.com/channel/UCuEDlaY-RUA9OpfLH--nf-A" target="blank"><img src="img/youtube-new.png"></a>
-		<a href="#"><img src="img/twitter-new.png"></a>
+		<a href="https://twitter.com/symposium_arts" target="blank"><img src="img/twitter-new.png"></a>
 	</div>
 	<div id="mobileFooter">
 		<div id="mobileIconsContainer">
-			<a href="https://www.facebook.com/boutiquedelmistero/" "><img src="img/Facebook-square.png"></a>
-			<a href="https://www.instagram.com/boutiquedelmistero_yt/" ><img src="img/instagram-new.png"></a>
-			<a href="https://www.youtube.com/channel/UCuEDlaY-RUA9OpfLH--nf-A" ><img src="img/youtube-new.png"></a>
-			<a href="#"><img src="img/twitter-new.png"></a>
+			<a href="https://www.facebook.com/boutiquedelmistero/" target="blank"><img src="img/Facebook-square.png"></a>
+			<a href="https://www.instagram.com/boutiquedelmistero_yt/" target="blank"><img src="img/instagram-new.png"></a>
+			<a href="https://www.youtube.com/channel/UCuEDlaY-RUA9OpfLH--nf-A" target="blank"><img src="img/youtube-new.png"></a>
+			<a href="https://twitter.com/symposium_arts"><img src="img/twitter-new.png"></a>
 		</div>
 	</div>
 	<div id="landing">
-		<div id="homeImgCont"></div>
+		<!--<div id="homeImgCont"></div>-->
 	</div>
 	<div id="lavori">
 		<div class="flex-container">
@@ -91,13 +91,16 @@
 				<iframe width="100%" height="200px" //scrolling="no" //frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/322429242&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 			</div>
 			<div class="box three">
+				<!--<a href="teatro.php">-->
 				<h3>Teatro</h3>
 				<p>Altro giro, altra passione: fotografie e spezzoni di spettacoli passati; date e biglietti per le prossime performance</p>
+				<div class="comingSoon" id="comingsoon1">COMING SOON</div>
+				</a>
 			</div>
 			<div class="box four">
 				<h3>Radio</h3>
 				<p>Intrattenimento settimanale con protagonisti ospiti, dibattiti, musiche e attualità</p>
-				<iframe src="https://open.spotify.com/embed/track/3jObpACelihU51vk17xdTm" width="100%" height="200px" frameborder="0" allowtransparency="true"></iframe>
+				<div class="comingSoon" id="comingsoon2">COMING SOON</div>
 			</div>
 			<div class="box five">
 				<a href="http://www.lulu.com/spotlight/gabrielesoatto"><h3>Libri</h3>
@@ -110,11 +113,12 @@
 			<div class="box six">
 				<h3>Fotografia e Grafiche</h3>
 				<p>Che sia per il tuo profilo Instagram, la copertina del tuo ultimo album o un evento da ricordare noi realizziamo ciò che ti serve</p>
+				<div class="contattaci" id="contattaci1"><a class="contattaciLink" href="#contatti">CONTATTACI</a></div>
 			</div>
 			<div class="box seven">
 				<h3>Editing</h3>
 				<p>Video musicali, sketch pubblicitari, riprese di feste e matrimoni sono solo alcuni dei servizi di registrazione e montaggio video che puoi richiedere</p>
-				<a href="#contatti">CONTATTACI</a>
+				<div class="contattaci" id="contattaci2"><a class="contattaciLink" href="#contatti">CONTATTACI</a></div>
 			</div>
 			<div class="box eight">
 				<h3>Basi Musicali</h3>
@@ -123,17 +127,19 @@
 			<div class="box nine">
 				<h3>Scritti</h3>
 				<p>Chiunque abbia bisogno di servizi di scrittura o ghostwriting di qualunque tipologia si trova nella sezione giusta!</p>
+				<div class="contattaci" id="contattaci3"><a class="contattaciLink" href="#contatti">CONTATTACI</a></div>
 			</div>
 			<div class="box ten">
 				<h3>Gadgets</h3>
-				<p>Coming soon...</p>
+				<p>Clicca qui se cerchi idee originali ed artistiche per l'acquisto di una maglietta, un poster, una tazza e quant'altro </p>
+				<div class="comingSoon" id="comingsoon3">COMING SOON</div>
 			</div>
 		</div>	
 	</div>
 	<div id="contatti">
 		<div id="Email-form">
 			<h3>CONTATTACI</h3><br>
-			<form action="send.php" method="post">
+			<!--<form action="send.php" method="post">
 				<input type="text" name="name" placeholder="Nome" required><br>
 				<input type="email" name="email" placeholder="Indirizzo E-Mail" required><br>
 				<legend>SERVIZIO (FACOLTATIVO)</legend>
@@ -146,13 +152,14 @@
 				</select>
 				<textarea id="message" name="message" cols="20" rows="4" placeholder="Messaggio" required></textarea><br>
 				<input id="send" type="submit" name="submit" value="INVIA">
-			</form>
+			</form>-->
+			<p>Per collaborazioni, richieste di servizi o semplice corrispondenza:<br><a><strong>SYMPSTUDIO@GMAIL.COM</strong></a><br>oppure scrivici sui social: Facebook e Instagram</p>
 		</div>
 	</div>
 
-	<div id="footer">
+	<!--<div id="footer">
 		
-	</div>
+	</div>-->
 	<script>
 		function parallax(){
 			var prlx_ly_1 =	document.getElementById('homeImgCont');
@@ -160,13 +167,13 @@
 		}
 		window.addEventListener("scroll", parallax, false);
 	</script>
-	<!--<script>
+	<script>
 		window.addEventListener("load", function(){
 			var load_screen = document.getElementById("load_screen");
 			document.body.removeChild(load_screen);
 		});
 	</script>
-	<script type="text/javascript" src="pace.js"></script>-->
+	<script type="text/javascript" src="pace.js"></script>
 	<script type="text/javascript" src="symposium.js"></script>
 </body>
 </html>
