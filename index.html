@@ -7,7 +7,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
-	<link rel="icon" href="img/rsz_boutique_icon.bmp" type="image/x-icon"/>
+	<link rel="icon" href="img/rsz_boutique_icon.bmp" type="image/x-icon">
 </head>
 <body>
 	<div id="load_screen">
@@ -81,30 +81,29 @@
 				<a href="https://www.youtube.com/channel/UCuEDlaY-RUA9OpfLH--nf-A" target="blank">
 				<h3>Canale Yt</h3>
 				<p>Una raccolta di produzioni audiovisive: sketch, webisodes, corti e molto altro...</p></a>
-				<iframe allowfullscreen width="99%" height="200px" 
-					src="https://www.youtube.com/embed/x9RrHhrWC-Y">
-				</iframe>
+				<iframe allowfullscreen width="99%" height="200px" src="https://www.youtube.com/embed/x9RrHhrWC-Y"></iframe>
 			</div>
 			<div class="box two">
-				<h3>Musiche</h3>
-				<p>Sezione dedicata a nostre libere composizioni musicali da ascoltare in ogni momento</p>
+				<a href="https://soundcloud.com/user-123591635" target="blank"><h3>Musiche</h3>
+				<p>Sezione dedicata a nostre libere composizioni musicali da ascoltare in ogni momento</p><a>
 				<iframe width="100%" height="200px" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/335521813&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 			</div>
 			<div class="box three">
 				<!--<a href="teatro.php">-->
 				<h3>Teatro</h3>
 				<p>Altro giro, altra passione: fotografie e spezzoni di spettacoli passati; date e biglietti per le prossime performance</p>
-				<div class="comingSoon" id="comingsoon1">COMING SOON</div>
+				<div class="blockContainer"><div class="comingSoon" id="comingsoon1">COMING SOON</div></div>
 				</a>
 			</div>
 			<div class="box four">
 				<h3>Radio</h3>
 				<p>Intrattenimento settimanale con protagonisti ospiti, dibattiti, musiche e attualità</p>
-				<div class="comingSoon" id="comingsoon2">COMING SOON</div>
+				<div class="blockContainer"><div class="comingSoon" id="comingsoon2">COMING SOON</div></div>
 			</div>
 			<div class="box five">
 				<a href="http://www.lulu.com/spotlight/gabrielesoatto"><h3>Libri</h3>
 				<p>Raccolta di romanzi, poesie e testi teatrali in versione cartacea o elettronica</p></a>
+				<div class="blockContainer"><div id="luluButton"><a href="http://www.lulu.com/commerce/index.php?fBuyContent=18495039" target="blank">COMPRA ORA</a></div></div>
 			</div>
 		</div>
 	</div>
@@ -113,26 +112,27 @@
 			<div class="box six">
 				<h3>Fotografia e Grafiche</h3>
 				<p>Che sia per il tuo profilo Instagram, la copertina del tuo ultimo album o un evento da ricordare noi realizziamo ciò che ti serve</p>
-				<div class="contattaci" id="contattaci1"><a class="contattaciLink" href="#contatti">CONTATTACI</a></div>
+				<div class="blockContainer"><div class="contattaci" id="contattaci1"><a class="contattaciLink" href="#contatti">CONTATTACI</a></div></div>
 			</div>
 			<div class="box seven">
 				<h3>Editing</h3>
 				<p>Video musicali, sketch pubblicitari, riprese di feste e matrimoni sono solo alcuni dei servizi di registrazione e montaggio video che puoi richiedere</p>
-				<div class="contattaci" id="contattaci2"><a class="contattaciLink" href="#contatti">CONTATTACI</a></div>
+				<div class="blockContainer"><div class="contattaci" id="contattaci2"><a class="contattaciLink" href="#contatti">CONTATTACI</a></div></div>
 			</div>
 			<div class="box eight">
 				<h3>Basi Musicali</h3>
 				<p>Una vasta collezione di brani, melodie, composizioni e basi di ogni genere da acquistare con varie licenze</p>
+				<div class="blockContainer"><div class="comingSoon" id="comingsoon4">COMING SOON</div></div>
 			</div>
 			<div class="box nine">
 				<h3>Scritti</h3>
 				<p>Chiunque abbia bisogno di servizi di scrittura o ghostwriting di qualunque tipologia si trova nella sezione giusta!</p>
-				<div class="contattaci" id="contattaci3"><a class="contattaciLink" href="#contatti">CONTATTACI</a></div>
+				<div class="blockContainer"><div class="contattaci" id="contattaci3"><a class="contattaciLink" href="#contatti">CONTATTACI</a></div></div>
 			</div>
 			<div class="box ten">
 				<h3>Gadgets</h3>
 				<p>Clicca qui se cerchi idee originali ed artistiche per l'acquisto di una maglietta, un poster, una tazza e quant'altro </p>
-				<div class="comingSoon" id="comingsoon3">COMING SOON</div>
+				<div class="blockContainer"><div class="comingSoon" id="comingsoon3">COMING SOON</div></div>
 			</div>
 		</div>	
 	</div>
@@ -156,10 +156,6 @@
 			<p>Per collaborazioni, richieste di servizi o semplice corrispondenza:<br><a><strong>SYMPSTUDIO@GMAIL.COM</strong></a><br>oppure scrivici sui social: Facebook e Instagram</p>
 		</div>
 	</div>
-
-	<!--<div id="footer">
-		
-	</div>-->
 	<script>
 		function parallax(){
 			var prlx_ly_1 =	document.getElementById('homeImgCont');
