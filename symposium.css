@@ -745,8 +745,10 @@ li:hover > #dropdown-menu-2 {
   .pace .pace-progress {
     height: 15px !important; }
 
-  .blockContainer div {
-    transform: scale(2.2); } }
+  .blockContainer {
+    bottom: 10vh !important; }
+    .blockContainer div {
+      transform: scale(2.2); } }
 /* large desktops and up ———– */
 @media screen and (min-width: 1280px) {
   #mobileNav {
