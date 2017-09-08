@@ -33,7 +33,7 @@ html {
   html #landingText {
     position: absolute;
     padding: 0;
-    top: 20vh;
+    top: 25vh;
     text-align: center;
     width: 100%; }
   html #logo {
@@ -52,25 +52,26 @@ html {
     position: fixed;
     z-index: 200;
     top: 0px;
-    width: 100%;
+    width: 100vw;
     height: 400vh;
-    opacity: 0; }
+    opacity: 1;
+    text-align: center; }
     html #load_screen #loadingText {
-      position: fixed;
+      padding: 0;
+      margin: 230px auto;
+      position: relative;
       font-size: 4em;
       font-family: "Bubbler One", sans-serif;
       letter-spacing: 5px;
       color: #1a8cff;
-      width: 50vw;
-      top: 20vh;
-      left: 40vw; }
+      font-weight: 100; }
     html #load_screen .spinner {
       width: 100px;
       height: 100px;
       background: #000;
       border-radius: 50%;
-      position: fixed;
-      margin: 50vh 47vw 30vh;
+      position: relative;
+      margin: 10px auto;
       display: inline-block;
       z-index: 201; }
       html #load_screen .spinner:after, html #load_screen .spinner:before {
@@ -429,33 +430,47 @@ li:hover > #dropdown-menu-2 {
     text-align: center;
     margin: 0 auto 50px;
     transform: translateY(26vh);
-    color: white; }
+    color: white;
+    -ms-input-placeholder-color: #004080;
+    -moz-placeholder-color: #004080;
+    -moz-placeholder-opacity: 1; }
     #contatti #Email-form h1 {
       padding: 0;
       margin: 0;
       display: block;
       color: white;
-      margin-bottom: 40px;
       font-weight: 100;
       font-size: 3em; }
+    #contatti #Email-form p {
+      margin: 0 0 30px 0;
+      line-height: 20px; }
     #contatti #Email-form input, #contatti #Email-form textarea {
-      border: 7px solid #1a8cff;
-      border-radius: 7px;
-      width: 45%;
+      border: 2px solid #1a8cff;
+      width: 35%;
       height: 5vh;
       font-size: 20px;
-      text-align: center; }
+      text-align: center;
+      color: black;
+      font-size: 1em;
+      background-color: rgba(255, 255, 255, 0.7); }
       #contatti #Email-form input:focus, #contatti #Email-form textarea:focus {
         border-color: #66b3ff;
         outline: none; }
     #contatti #Email-form textarea {
-      text-align: start; }
+      text-align: start;
+      font-family: sans-serif;
+      width: 45%;
+      height: 18vh; }
+    #contatti #Email-form ::-webkit-input-placeholder {
+      color: #004080; }
+    #contatti #Email-form ::-moz-placeholder {
+      color: #004080;
+      opacity: 1; }
     #contatti #Email-form [type="submit"] {
       border: none;
       background-color: #1a8cff;
-      width: 170px;
+      width: 36%;
       height: 60px;
-      border-radius: 10px;
       color: white;
       text-decoration: none;
       text-align: center;
@@ -469,11 +484,10 @@ li:hover > #dropdown-menu-2 {
       transition: all 0.2s ease-in-out, transform 0.2s ease-in-out;
       letter-spacing: 2px; }
       #contatti #Email-form [type="submit"]:hover {
-        transform: scale(1.15);
         background-color: #0059b3; }
     #contatti #Email-form label {
       display: block;
-      margin-bottom: 30px;
+      margin-bottom: 50px;
       font-size: 1.5em; }
       #contatti #Email-form label span {
         display: block; }
@@ -484,7 +498,7 @@ li:hover > #dropdown-menu-2 {
   background-color: black;
   z-index: 4;
   width: 100vw;
-  bottom: 0; }
+  bottom: -5px; }
 
 .flex-container {
   display: flex;
@@ -639,7 +653,7 @@ li:hover > #dropdown-menu-2 {
 
   #lavori iframe {
     width: 50% !important;
-    transform: scale(2) translateY(65px);
+    transform: scale(2) translateY(62px);
     margin: auto;
     height: 240px !important; }
 
@@ -667,14 +681,20 @@ li:hover > #dropdown-menu-2 {
     border-bottom: none !important;
     border-right: none !important;
     border-left: none !important;
-    transform: scale(1.5) translateY(400px) !important;
+    transform: scale(1.3) translateY(400px) !important;
     margin: 0 auto -300px !important;
     font-size: 1.2em !important; }
     #Email-form input, #Email-form textarea {
-      width: 70% !important;
-      font-size: 50px !important; }
+      width: 100% !important;
+      font-size: 30px !important; }
     #Email-form [type="submit"] {
-      height: 100px !important; }
+      height: 100px !important;
+      font-size: 40px !important;
+      width: 101% !important; }
+    #Email-form textarea {
+      height: 10vh !important; }
+    #Email-form p {
+      font-size: 1em !important; }
 
   #servizi .six {
     max-height: 45vh !important; }
@@ -693,7 +713,10 @@ li:hover > #dropdown-menu-2 {
   .blockContainer {
     bottom: 10vh !important; }
     .blockContainer div {
-      transform: scale(2.2) !important; } }
+      transform: scale(2.2) !important; }
+
+  #loadingText {
+    margin-top: 500px !important; } }
 /* large desktops and up ———– */
 @media screen and (min-width: 1280px) {
   #mobileNav {
