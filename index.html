@@ -23,7 +23,7 @@
 			<li><a href="#lavori">LAVORI</a>
 				<ul class="drop-menu" id="dropdown-menu-1">
 					<li> <a class="interMenuLink" href="https://www.youtube.com/channel/UCuEDlaY-RUA9OpfLH--nf-A" target="blank">Canale YT</a></li>
-					<li>Musiche</li>
+					<li><a class="interMenuLink" href="https://soundcloud.com/user-123591635" target="blank">Musiche</a></li>
 					<li>Teatro</li>
 					<li><a class="interMenuLink" href="http://www.lulu.com/spotlight/gabrielesoatto" target="blank">Libri</a></li>
 					<li>Radio</li>
@@ -81,15 +81,14 @@
 				<a href="https://www.youtube.com/channel/UCuEDlaY-RUA9OpfLH--nf-A" target="blank">
 				<h3>Canale Yt</h3>
 				<p>Una raccolta di produzioni audiovisive: sketch, webisodes, corti e molto altro...</p></a>
-				<iframe allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen" webkitallowfullscreen="webkitallowfullscreen" width="99%" height="200px" src="https://www.youtube.com/embed/x9RrHhrWC-Y"></iframe>
+				<iframe allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen" webkitallowfullscreen="webkitallowfullscreen" width="99%" height="200px" src="https://www.youtube.com/embed/Dx4dZTAykIc"></iframe>
 			</div>
 			<div class="box two">
 				<a href="https://soundcloud.com/user-123591635" target="blank"><h3>Musiche</h3>
 				<p>Sezione dedicata a nostre libere composizioni musicali da ascoltare in ogni momento</p><a>
-				<iframe width="100%" height="200px" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/335521813&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+				<iframe width="100%" height="200px" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/341444422&amp;color=1a8cff&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 			</div>
 			<div class="box three">
-				<!--<a href="teatro.php">-->
 				<h3>Teatro</h3>
 				<p>Altro giro, altra passione: fotografie e spezzoni di spettacoli passati; date e biglietti per le prossime performance</p>
 				<div class="blockContainer"><div class="comingSoon" id="comingsoon1">COMING SOON</div></div>
@@ -111,7 +110,7 @@
 		<div class="flex-container">
 			<div class="box six">
 				<h3>Fotografia e Grafiche</h3>
-				<p>Che sia per il tuo profilo Instagram, la copertina del tuo ultimo album o un evento da ricordare noi realizziamo ciò che ti serve</p>
+				<p>Che sia per il tuo profilo Instagram, la copertina del tuo ultimo album o un evento da ricordare noi realizziamo ci che ti serve</p>
 				<div class="blockContainer"><div class="contattaci" id="contattaci1"><a class="contattaciLink" href="#contatti">CONTATTACI</a></div></div>
 			</div>
 			<div class="box seven">
@@ -138,31 +137,19 @@
 	</div>
 	<div id="contatti">
 		<div id="Email-form">
-			<h3>CONTATTACI</h3><br>
-			<!--<form action="send.php" method="post">
-				<input type="text" name="name" placeholder="Nome" required><br>
-				<input type="email" name="email" placeholder="Indirizzo E-Mail" required><br>
-				<legend>SERVIZIO (FACOLTATIVO)</legend>
-				<select name="object">
-					<option>Nessun Servizio</option>
-					<option>Foto</option>
-					<option>Editing</option>
-					<option>Musica</option>
-					<option>Scritti</option>
-				</select>
-				<textarea id="message" name="message" cols="20" rows="4" placeholder="Messaggio" required></textarea><br>
-				<input id="send" type="submit" name="submit" value="INVIA">
-			</form>-->
-			<p>Per collaborazioni, richieste di servizi o semplice corrispondenza:<br><a><strong>SYMPSTUDIO@GMAIL.COM</strong></a><br>oppure scrivici sui social: Facebook e Instagram</p>
+			<h1>CONTATTACI</h1><br>
+			<form action="https://formspree.io/sympstudio@gmail.com" method="POST">
+			    
+			    <label><span>NOME</span><input type="text" name="name"></label>
+			    
+			    <label><span>INDIRIZZO EMAIL</span><input type="email" name="_replyto"></label>
+			   
+			    <label><span>MESSAGGIO</span><textarea></textarea></label>
+			    
+			    <input type="submit" value="INVIA">
+			</form>
 		</div>
 	</div>
-	<script>
-		function parallax(){
-			var prlx_ly_1 =	document.getElementById('homeImgCont');
-			prlx_ly_1.style.top = -(window.pageYOffset / 3.5)+'px';
-		}
-		window.addEventListener("scroll", parallax, false);
-	</script>
 	<script>
 		window.addEventListener("load", function(){
 			var load_screen = document.getElementById("load_screen");
