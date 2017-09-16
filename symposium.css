@@ -656,6 +656,8 @@ li:hover > #dropdown-menu-2 {
     transform: scale(2) translateY(62px);
     margin: auto;
     height: 240px !important; }
+  #lavori #SoundcloudIframe {
+    height: 230px !important; }
 
   #contatti h3 {
     font-size: 5em !important; }
